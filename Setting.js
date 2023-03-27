@@ -61,12 +61,12 @@ const Settings = ()=>{
       <Text style={{marginTop:50,alignSelf:"center",fontSize:20,fontFamily:"Mulish_500Medium"}}>Change email</Text>
 
       <Card style={{width:250,alignSelf:"center",height:30,marginTop:15,borderRadius:20}}>
-      <TextInput style={{marginLeft:10,fontFamily:"Mulish_500Medium",marginTop:5}} placeholder="Email", onChange={(e) => setEmail(e.target.value)}/>
+      <TextInput style={{marginLeft:10,fontFamily:"Mulish_500Medium",marginTop:5}} placeholder="Email", value={email} onChange={(e) => setEmail(e.target.value)}/>
       </Card>
 
       <Text style={{marginTop:50,alignSelf:"center",fontSize:20,fontFamily:"Mulish_500Medium"}}>Change password</Text>
        <Card style={{width:250,alignSelf:"center",height:30,marginTop:15,borderRadius:20}}>
-      <TextInput style={{marginLeft:10,fontFamily:"Mulish_500Medium",marginTop:5}} placeholder="Password",onChange={(e) => setPassword(e.target.value)}/>
+      <TextInput style={{marginLeft:10,fontFamily:"Mulish_500Medium",marginTop:5}} placeholder="Password",value={password} onChange={(e) => setPassword(e.target.value)}/>
       </Card>
 
         <LinearGradient
