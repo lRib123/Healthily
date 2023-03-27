@@ -53,6 +53,7 @@ const [error, setError] = useState(null);
             style={{flex: 1, marginLeft:15,fontFamily:"Mulish_500Medium"}}
             placeholder="Email"
             underlineColorAndroid="transparent"
+            value={email}
             onChangeText={(text) => setEmail(text)}
           />
         </View>
