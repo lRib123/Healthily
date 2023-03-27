@@ -50,7 +50,8 @@ const signup = () => {navigation.navigate('SignUp')}
             style={{flex: 1, marginLeft:15,fontFamily:"Mulish_500Medium"}}
             placeholder="Email"
             type="email"
-            
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             underlineColorAndroid="transparent"
           />
         </View>
@@ -60,6 +61,8 @@ const signup = () => {navigation.navigate('SignUp')}
             style={{flex: 1,marginLeft:15,fontFamily:"Mulish_500Medium",}}
             placeholder="Password"
             secureTextEntry={true}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             underlineColorAndroid="transparent"     
           />
         </View>  
