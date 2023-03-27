@@ -76,7 +76,7 @@ const signup = () => {navigation.navigate('SignUp')}
         end={{x: 1, y: 1}}
         style={styles.button1}
       >
-           <TouchableOpacity onPress={button} >
+           <TouchableOpacity onPress={(e)=>handleLogin(e)} >
              <Text style={styles.sign}> SIGN IN </Text>  
             </TouchableOpacity>
           </LinearGradient>
