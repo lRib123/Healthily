@@ -14,7 +14,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 const width = Dimensions.get('screen').width
 const height = Dimensions.get('screen').height
-const Breakfast=()=>{
+const Lunch=()=>{
   const [checkedNormal, setCheckedNormal] = React.useState(true);
   const [chosenLabel,setChosenLabel] = useState('>= $20.00') 
   const [index,setIndex] = useState(1)
@@ -266,4 +266,4 @@ const Breakfast=()=>{
   )
 }
 
-export default Breakfast
+export default Lunch
